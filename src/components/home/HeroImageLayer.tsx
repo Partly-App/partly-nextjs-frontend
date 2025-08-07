@@ -8,39 +8,33 @@ const images = [
   },
   {
     src: "/images/moments/gentle-curiosity.webp",
-    className:
-      "animate-float-3d-b left-[20%] top-[15%]",
+    className: "animate-float-3d-b left-[20%] top-[15%]",
   },
   {
     src: "/images/moments/the-echo-of-regret.webp",
-    className:
-      "animate-float-3d-c right-[23%] top-[42%]",
+    className: "animate-float-3d-c right-[23%] top-[42%]",
   },
   {
     src: "/images/moments/the-old-fear.webp",
-    className:
-      "animate-float-3d-a right-[10%] top-3/4",
+    className: "animate-float-3d-a right-[10%] top-3/4",
   },
   {
     src: "/images/moments/the-one-in-charge.webp",
-    className:
-      "animate-float-3d-b right-[4%] top-1/4",
+    className: "animate-float-3d-b right-[4%] top-1/4",
   },
   {
     src: "/images/moments/the-peaceful-core.webp",
-    className:
-      "animate-float-3d-c left-[10%] top-[60%]",
+    className: "animate-float-3d-c left-[10%] top-[60%]",
   },
   {
     src: "/images/moments/the-stumble.webp",
-    className:
-      "animate-float-3d-c left-[30%] top-[80%]",
+    className: "animate-float-3d-c left-[30%] top-[80%]",
   },
 ]
 
 const HeroImageLayer = () => {
   return (
-    <div className="absolute inset-0 z-0 h-full w-full">
+    <div className="animate-appear absolute inset-0 z-0 h-full w-full [animation-delay:2.5s] opacity-0">
       {images.map((img, i) => (
         <Image
           key={img.src}
