@@ -82,7 +82,10 @@ module.exports = {
       },
       fontFamily: {
         inter: ["var(--font-inter)", ...defaultTheme.fontFamily.sans],
-        caveat: ["var(--font-montserratAlt)", ...defaultTheme.fontFamily.sans],
+        montserratAlt: [
+          "var(--font-montserratAlt)",
+          ...defaultTheme.fontFamily.sans,
+        ],
       },
       lineHeight: {
         tight: 1.1,
@@ -143,6 +146,46 @@ module.exports = {
       },
       borderRadius: {
         "5xl": "40px",
+      },
+      blur: {
+        xs: "1.5px",
+      },
+      keyframes: {
+        appear: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+        bounceSlow: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(24px)" },
+        },
+        "float-3d-a": {
+          "0%, 100%": {
+            transform: "translateY(0) rotateX(0deg) rotateZ(0deg)",
+          },
+          "50%": {
+            transform: "translateY(-10px) rotateX(8deg) rotateZ(-3deg)",
+          },
+        },
+        "float-3d-b": {
+          "0%, 100%": {
+            transform: "translateY(0) rotateX(0deg) rotateZ(0deg)",
+          },
+          "50%": { transform: "translateY(8px) rotateX(-6deg) rotateZ(4deg)" },
+        },
+        "float-3d-c": {
+          "0%, 100%": {
+            transform: "translateY(0) rotateX(0deg) rotateZ(0deg)",
+          },
+          "50%": { transform: "translateY(-6px) rotateX(4deg) rotateZ(-6deg)" },
+        },
+      },
+      animation: {
+        appear: "appear 2s ease-out forwards",
+        bounceSlow: "bounceSlow 5s ease-in-out infinite",
+        "float-3d-a": "float-3d-a 8s ease-in-out infinite",
+        "float-3d-b": "float-3d-b 8.5s ease-in-out infinite",
+        "float-3d-c": "float-3d-c 9s ease-in-out infinite",
       },
     },
   },
