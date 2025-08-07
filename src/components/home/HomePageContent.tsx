@@ -1,9 +1,9 @@
-import Header from "./Header"
-import HeroSection from "./HeroSection"
+import Header from "../shared/Header"
+import HeroSection from "./hero/HeroSection"
 
 const HomePageContent = () => {
   return (
-    <main className="bg-black-light relative h-full w-full px-8 py-6">
+    <main className="relative h-full w-full bg-black-light px-8 py-6">
       <Header />
       <HeroSection />
     </main>

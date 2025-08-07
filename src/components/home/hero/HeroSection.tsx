@@ -2,7 +2,7 @@
 
 import clsx from "clsx"
 import Image from "next/image"
-import AppStoreCTA from "../shared/AppStoreCTA"
+import AppStoreCTA from "../../shared/AppStoreCTA"
 import HeroImageLayer from "./HeroImageLayer"
 
 const HeroSection = () => {
