@@ -34,16 +34,15 @@ const images = [
 
 const HeroImageLayer = () => {
   return (
-    <div className="animate-appear absolute inset-0 z-0 h-full w-full [animation-delay:2.5s] opacity-0">
+    <div className="absolute inset-0 z-0 h-full w-full animate-appear opacity-0 [animation-delay:2.5s]">
       {images.map((img, i) => (
         <Image
           key={img.src}
           src={img.src}
           width={64}
           height={64}
-          objectFit="cover"
           alt=""
-          className={clsx("blur-xs absolute rounded-xl", img.className)}
+          className={clsx("absolute rounded-xl blur-xs", img.className)}
         />
       ))}
     </div>

@@ -16,8 +16,7 @@ const AppStoreCTA = ({ className }: { className?: string }) => {
         alt="Download on AppStore"
         width={240}
         height={32}
-        objectFit="contain"
-        className="select-none pointer-events-none"
+        className="pointer-events-none select-none"
       />
     </Link>
   )

@@ -1,12 +1,12 @@
 const StatsRow = () => {
   return (
-    <div className="flex w-full items-center justify-evenly gap-6">
+    <section className="flex w-full items-center justify-evenly gap-6">
       <div className="flex flex-1 flex-col justify-center gap-4 text-center">
         <h2 className="font-montserratAlt text-19xl font-black leading-[1] text-purple-light">
           3
         </h2>
         <h3 className="font-montserratAlt text-14xl font-black leading-[1]">
-          Paths
+          Journeys
         </h3>
         <span>Confidence, Anxiety and Anger</span>
       </div>
@@ -35,7 +35,7 @@ const StatsRow = () => {
         </h3>
         <span>To help you reflect, understand and grow</span>
       </div>
-    </div>
+    </section>
   )
 }
 
