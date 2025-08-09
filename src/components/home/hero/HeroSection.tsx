@@ -7,7 +7,7 @@ import HeroImageLayer from "./HeroImageLayer"
 
 const HeroSection = () => {
   return (
-    <div className="relative z-[5] flex min-h-[85vh] w-full flex-col items-center justify-center">
+    <div className="relative z-[5] flex min-h-[80vh] w-full flex-col items-center justify-center">
       <HeroImageLayer />
       <div className="animate-appear pointer-events-none relative aspect-square w-48 opacity-0 [animation-delay:1s]">
         <Image
