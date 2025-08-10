@@ -7,7 +7,7 @@ import HeroImageLayer from "./HeroImageLayer"
 
 const HeroSection = () => {
   return (
-    <div className="relative z-[5] flex min-h-[80vh] w-full flex-col items-center justify-center">
+    <div className="relative flex min-h-[80vh] w-full flex-col items-center justify-center">
       <HeroImageLayer />
       <AnimatedLogo size={192} />
       <h1
@@ -26,7 +26,7 @@ const HeroSection = () => {
         </span>
         .
       </span>
-      <AppStoreCTA className="mt-10" />
+      <AppStoreCTA className="z-[5] mt-10" />
     </div>
   )
 }

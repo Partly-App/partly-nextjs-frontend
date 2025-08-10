@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import { Inter, Montserrat_Alternates } from "next/font/google"
 import "./globals.css"
 import clsx from "clsx"
+import Header from "@/components/shared/Header"
 
 const inter = Inter({
   variable: "--font-inter",
@@ -27,6 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={clsx(inter.variable, montserratAlt.variable)}>
+        <Header />
         {children}
       </body>
     </html>

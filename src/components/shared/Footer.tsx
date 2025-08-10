@@ -3,11 +3,11 @@ import AppStoreCTA from "./AppStoreCTA"
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col justify-center px-8 pt-16">
+    <footer className="flex flex-col justify-center pt-16">
       <h2 className="mb-16 text-center font-montserratAlt text-10xl font-black leading-[1.1]">
         Ready to feel <br />
-        <span className="text-19xl text-green-default">Better</span>
-        <span className="text-19xl">?</span>
+        <span className="text-10xl sm:text-19xl text-green-default">Better</span>
+        <span className="text-10xl sm:text-19xl">?</span>
       </h2>
 
       <div className="flex flex-col items-center justify-center">
@@ -28,7 +28,7 @@ const Footer = () => {
       </div>
 
       <div className="relative h-96 gap-8 overflow-hidden pb-16">
-        <AppStoreCTA className="absolute left-1/2 top-[5%] animate-float-3d-a" />
+        <AppStoreCTA className="absolute left-[50%] top-[5%] animate-float-3d-a" />
         <AppStoreCTA className="absolute left-[5%] top-[15%] animate-float-3d-b [animation-delay:0.2s]" />
         <AppStoreCTA className="absolute left-[35%] top-[25%] animate-float-3d-c [animation-delay:0.4s]" />
         <AppStoreCTA className="absolute right-[11%] top-[10%] animate-float-3d-a [animation-delay:0.6s]" />

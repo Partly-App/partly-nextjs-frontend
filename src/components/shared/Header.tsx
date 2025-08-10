@@ -2,11 +2,12 @@
 
 import clsx from "clsx"
 import Image from "next/image"
+import Link from "next/link"
 
 const Header = () => {
   return (
     <div className="fixed left-0 right-0 top-6 z-20 px-4">
-      <div className="w-full rounded-2xl bg-grey-dark px-3 py-3">
+      <div className="flex w-full items-center justify-between rounded-2xl bg-grey-dark py-3 pl-3 pr-4">
         <div
           className="flex items-center gap-3"
           onClick={() => window.scroll({ top: 0, behavior: "smooth" })}
@@ -27,6 +28,28 @@ const Header = () => {
           >
             Partly
           </span>
+        </div>
+
+        <div className="flex items-center gap-6">
+          {/* <Link
+            href="/faq"
+            className="font-montserratAlt font-bold opacity-75 transition-opacity hover:opacity-100"
+          >
+            For Business
+          </Link> */}
+          <Link
+            href="/faq"
+            className="font-montserratAlt font-bold opacity-75 transition-opacity hover:opacity-100"
+          >
+            FAQ
+          </Link>
+          <Link
+            href="https://www.tiktok.com/@partly_app"
+            target="_blank"
+            className="font-montserratAlt font-bold opacity-75 transition-opacity hover:opacity-100"
+          >
+            TikTok
+          </Link>
         </div>
       </div>
     </div>

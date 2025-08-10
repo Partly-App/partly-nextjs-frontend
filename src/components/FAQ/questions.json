@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "question": "What is Partly and how can it help me?",
+        "answer": "Partly is an app based on the Internal Family Systems (IFS) model that helps you understand your emotions and inner parts through guided lessons, reflections, and support - so you can build confidence, calm anxiety, and manage anger"
+    },
+    {
+        "id": 2,
+        "question": "Who is Partly for?",
+        "answer": "Anyone who wants to better understand their emotions! Whether you're a student, parent, professional, or just curious about self-growth, Partly is designed to support you on your unique journey."
+    },
+    {
+        "id": 3,
+        "question": "What is the Internal Family Systems (IFS) model?",
+        "answer": "IFS is a proven psychology approach that sees your mind as made of “parts” - different feelings and thoughts that influence your behavior. Partly uses IFS to help you recognize and work with these parts for emotional clarity."
+    },
+    {
+        "id": 4,
+        "question": "How does Partly personalize my experience?",
+        "answer": "Partly learns from your reflections, choices, and past chat conversations to tailor lessons and insights uniquely for you. Dialogue feature also has long term memory and can bring up past info you've shared when relevant."
+    },
+    {
+        "id": 5,
+        "question": "How much time do I need to use Partly each day?",
+        "answer": "Just a few minutes! Each lessons (we call them Moments) is designed to fit into your busy life, and you can go at your own pace. Even a quick daily check-in can make a big difference."
+    },
+    {
+        "id": 6,
+        "question": "How is Partly different from other mental wellness apps?",
+        "answer": "Unlike generic mood trackers or meditation apps, Partly combines deep psychological education with personalized guidance, reflections and relatable everyday scenarios — helping you truly understand why you feel what you feel and how to change it."
+    }
+]
