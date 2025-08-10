@@ -7,7 +7,7 @@ const AppStoreCTA = ({ className }: { className?: string }) => {
     <Link
       href="/"
       className={clsx(
-        "relative flex h-fit w-40 items-center justify-center",
+        "flex h-fit w-40 items-center justify-center",
         className,
       )}
     >

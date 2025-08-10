@@ -1,3 +1,4 @@
+import Footer from "../shared/Footer"
 import Header from "../shared/Header"
 import StatsRow from "./StatsRow"
 import HeroSection from "./hero/HeroSection"
@@ -14,6 +15,7 @@ const HomePageContent = () => {
         <SctructureShowcase />
       </div>
       <Testimonials />
+      <Footer />
     </>
   )
 }

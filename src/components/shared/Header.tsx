@@ -20,7 +20,7 @@ const Header = () => {
           />
           <span
             className={clsx(
-              "font-montserratAlt select-none bg-transparent text-4xl font-black",
+              "select-none bg-transparent font-montserratAlt text-4xl font-black",
               "text-yellow-light",
             )}
             style={{ textShadow: "0px 0px 2px #FFF7DF" }}

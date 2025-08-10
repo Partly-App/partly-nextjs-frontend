@@ -1,7 +1,7 @@
 "use client"
 
+import AnimatedLogo from "@/components/shared/AnimatedLogo"
 import clsx from "clsx"
-import Image from "next/image"
 import AppStoreCTA from "../../shared/AppStoreCTA"
 import HeroImageLayer from "./HeroImageLayer"
 
@@ -9,33 +9,11 @@ const HeroSection = () => {
   return (
     <div className="relative z-[5] flex min-h-[80vh] w-full flex-col items-center justify-center">
       <HeroImageLayer />
-      <div className="animate-appear pointer-events-none relative aspect-square w-48 opacity-0 [animation-delay:1s]">
-        <Image
-          width={192}
-          height={192}
-          src="/images/fall-3.webp"
-          alt=""
-          className="absolute top-0 animate-bounceSlow select-none object-contain [animation-delay:0.4s]"
-        />
-        <Image
-          width={192}
-          height={192}
-          src="/images/fall-2.webp"
-          alt=""
-          className="absolute top-[-32px] animate-bounceSlow select-none object-contain [animation-delay:0.6s]"
-        />
-        <Image
-          width={192}
-          height={192}
-          src="/images/fall-1.webp"
-          alt=""
-          className="absolute top-[-64px] animate-bounceSlow select-none object-contain [animation-delay:0.8s]"
-        />
-      </div>
+      <AnimatedLogo size={192} />
       <h1
         style={{ textShadow: "0px 0px 10px #FFF7DF" }}
         className={clsx(
-          "animate-appear font-montserratAlt select-none text-19xl font-black text-yellow-light",
+          "animate-appear select-none font-montserratAlt text-19xl font-black text-yellow-light",
           "mb-2",
         )}
       >
