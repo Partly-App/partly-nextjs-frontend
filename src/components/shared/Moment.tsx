@@ -73,28 +73,39 @@ const Moment = ({
   return (
     <div
       className={clsx(
-        "flex max-w-[460px] justify-between gap-8 rounded-2xl p-4",
+        "flex max-w-[364px] justify-between gap-4 rounded-2xl p-3",
+        "xs:items-stretch xs:p-4 sm:w-[460px] sm:max-w-max sm:gap-8",
         momentMap[tag].bgColor,
         className,
       )}
     >
-      <div className="flex flex-col justify-between">
-        <div>
+      <div className="flex flex-col justify-between gap-3">
+        <div className="self-stretch">
           <h5
             className={clsx(
-              "mb-2 font-montserratAlt text-2xl font-bold leading-7",
+              "mb-2 font-montserratAlt text-lg font-bold leading-[1.15] sm:text-2xl",
               momentMap[tag].color,
             )}
           >
             {title}
           </h5>
-          <p className={clsx("text-sm leading-[1.25]", momentMap[tag].color)}>
+          <p
+            className={clsx(
+              "text-xs leading-[1.25] sm:text-sm",
+              momentMap[tag].color,
+            )}
+          >
             {description}
           </p>
         </div>
 
         {momentMap[tag].tagIconSrc && (
-          <div className="flex w-fit items-center gap-2 rounded-xl bg-black-default px-3 py-2">
+          <div
+            className={clsx(
+              "flex w-fit items-center gap-2 rounded-md bg-black-default px-1.5 py-1",
+              "xs:rounded-xl xs:px-3 xs:py-2",
+            )}
+          >
             <Image
               draggable={false}
               alt=""
@@ -110,14 +121,20 @@ const Moment = ({
         )}
       </div>
 
-      <Image
-        draggable={false}
-        alt=""
-        src={imgSrc}
-        width={140}
-        height={140}
-        className="select-none rounded-2xl"
-      />
+      <div
+        className={clsx(
+          "relative aspect-square w-[25%] min-w-[60px] max-w-[140px] flex-shrink-0 self-center",
+          "xs:w-[140px] xs:min-w-[140px] xs:max-w-[140px]",
+        )}
+      >
+        <Image
+          fill
+          draggable={false}
+          alt=""
+          src={imgSrc}
+          className="rounded-2xl object-cover"
+        />
+      </div>
     </div>
   )
 }

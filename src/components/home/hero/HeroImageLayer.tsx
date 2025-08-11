@@ -34,8 +34,13 @@ const images = [
 
 const HeroImageLayer = () => {
   return (
-    <div className="absolute inset-0 z-0 h-full w-full animate-appear opacity-0 [animation-delay:2.5s]">
-      {images.map((img, i) => (
+    <div
+      className={clsx(
+        "pointer-events-none absolute inset-0 z-0 h-full w-full",
+        "animate-appear opacity-0 [animation-delay:2.5s]",
+      )}
+    >
+      {images.map((img) => (
         <Image
           key={img.src}
           src={img.src}

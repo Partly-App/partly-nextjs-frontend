@@ -6,16 +6,18 @@ import TESTIMONIALS_DATA from "./data.json"
 const Testimonials = () => {
   return (
     <section className="py-12">
-      <h2 className="mx-auto mb-12 text-center font-montserratAlt text-12xl font-black">
-        What people say <br />
-        about{" "}
-        <span
-          style={{ textShadow: "0px 0px 7px #FFF7DF" }}
-          className="mb-2 select-none text-yellow-light"
-        >
-          Partly
-        </span>
-      </h2>
+      <div className="px-4">
+        <h2 className="mx-auto mb-12 text-center font-montserratAlt text-6xl font-black xs:text-12xl">
+          What people say <br />
+          about{" "}
+          <span
+            style={{ textShadow: "0px 0px 7px #FFF7DF" }}
+            className="mb-2 select-none text-yellow-light"
+          >
+            Partly
+          </span>
+        </h2>
+      </div>
       <Marquee speed={25} loop={0}>
         {TESTIMONIALS_DATA.map((item) => (
           <Testimonial

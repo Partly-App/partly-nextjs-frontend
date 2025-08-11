@@ -36,29 +36,30 @@ const StructureRow = ({ index, textContent, children }: StructureRowProps) => {
   }, [])
 
   return (
-    <div className="relative pt-4">
-      <div className="flex items-stretch gap-12">
-        <div className="flex h-[520px] w-8 flex-col items-center justify-between pt-6">
+    <div className="relative flex gap-12 pt-12">
+      <div className="flex flex-1 items-stretch gap-6 md:gap-12">
+        <div className="flex h-[720px] w-6 flex-col items-center justify-between pt-6 xs:w-8 lg:h-[520px]">
           <div
             ref={ref}
             className={clsx(
-              "flex h-12 w-12 items-center justify-center rounded-full",
+              "flex h-8 w-8 items-center justify-center rounded-full xs:h-12 xs:w-12",
               "transition-colors duration-700 ease-out",
               isVisible ? "bg-green-default" : "bg-white-default/25",
             )}
             style={{ transitionDelay: "500ms" }}
           >
-            <Image
-              alt=""
-              src="/images/icons/check.svg"
-              width={28}
-              height={28}
-              className={clsx(
-                "transition-opacity duration-700 ease-out",
-                isVisible ? "opacity-100" : "opacity-0",
-              )}
-              style={{ transitionDelay: "750ms" }}
-            />
+            <div className="relative h-4 w-4 xs:h-7 xs:w-7">
+              <Image
+                fill
+                alt=""
+                src="/images/icons/check.svg"
+                className={clsx(
+                  "object-contain transition-opacity duration-700 ease-out",
+                  isVisible ? "opacity-100" : "opacity-0",
+                )}
+                style={{ transitionDelay: "750ms" }}
+              />
+            </div>
           </div>
           {Array.from({ length: 7 })
             .fill(null)
@@ -69,17 +70,16 @@ const StructureRow = ({ index, textContent, children }: StructureRowProps) => {
               />
             ))}
         </div>
-
-        <div className="flex flex-1 justify-between gap-12">
-          <div>
-            <span className="mb-4 block font-montserratAlt text-19xl font-black opacity-25">
+        <div className="flex flex-1 flex-col gap-8 lg:flex-row">
+          <div className="lg:flex-1">
+            <span className="mb-4 inline-block font-montserratAlt text-19xl font-black opacity-25">
               {index}.
             </span>
             {textContent}
           </div>
-        </div>
 
-        {children}
+          {children}
+        </div>
       </div>
     </div>
   )

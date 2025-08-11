@@ -26,12 +26,12 @@ const SctructureShowcase = () => {
   }, [])
 
   return (
-    <section className="pt-24">
+    <section className="pt-12">
       <StructureRow
         index={1}
         textContent={
           <>
-            <h3 className="mb-4 flex-wrap font-montserratAlt text-12xl font-bold leading-[1]">
+            <h3 className="mb-4 font-montserratAlt text-12xl font-bold leading-[1]">
               Choose your{" "}
               <span className="font-black text-purple-light">Journey</span>
             </h3>
@@ -54,72 +54,81 @@ const SctructureShowcase = () => {
           </>
         }
       >
-        <div className="relative flex-1">
+        <div className="relative flex-1 flex-shrink-0">
           <AppearAnimated
             slide={false}
             className={clsx(
-              "absolute right-[40%] top-0",
+              "absolute right-[15%] top-0 sm:right-[40%]",
               selected === 1 && "z-[3]",
             )}
             delay={100}
           >
-            <Image
-              draggable={false}
-              src="/images/journeys/confidence.webp"
-              width={192}
-              height={192}
-              className={clsx(
-                "-rotate-12 rounded-2xl",
-                "border-4 transition-colors",
-                selected === 1 ? "border-green-default" : "border-transparent",
-              )}
-              onClick={() => setSelected(1)}
-              alt=""
-            />
+            <div className="relative aspect-square w-[140px] xs:w-[192px]">
+              <Image
+                draggable={false}
+                src="/images/journeys/confidence.webp"
+                fill
+                className={clsx(
+                  "-rotate-12 rounded-2xl object-contain",
+                  "border-4 transition-colors",
+                  selected === 1
+                    ? "border-green-default"
+                    : "border-transparent",
+                )}
+                alt=""
+                onClick={() => setSelected(1)}
+              />
+            </div>
           </AppearAnimated>
           <AppearAnimated
             slide={false}
             className={clsx(
-              "absolute right-[20%] top-[28%] z-[2]",
+              "absolute right-[50%] top-[28%] z-[2] xs:right-[45%] sm:right-[20%]",
               selected === 2 && "z-[3]",
             )}
             delay={300}
           >
-            <Image
-              draggable={false}
-              src="/images/journeys/anxiety.webp"
-              width={192}
-              height={192}
-              className={clsx(
-                "rounded-2xl",
-                "border-4 transition-colors",
-                selected === 2 ? "border-green-default" : "border-transparent",
-              )}
-              onClick={() => setSelected(2)}
-              alt=""
-            />
+            <div className="relative aspect-square w-[140px] xs:w-[192px]">
+              <Image
+                draggable={false}
+                src="/images/journeys/anxiety.webp"
+                fill
+                className={clsx(
+                  "rounded-2xl object-contain",
+                  "border-4 transition-colors",
+                  selected === 2
+                    ? "border-green-default"
+                    : "border-transparent",
+                )}
+                alt=""
+                onClick={() => setSelected(2)}
+              />
+            </div>
           </AppearAnimated>
           <AppearAnimated
             slide={false}
             className={clsx(
-              "absolute left-0 top-[42%] z-[1] lg:left-[5%] xl:left-[20%] 2xl:left-[35%]",
+              "absolute right-[15%] top-[60%] z-[1] sm:right-[45%] sm:top-[45%]",
               selected === 3 && "z-[3]",
             )}
             delay={750}
           >
-            <Image
-              draggable={false}
-              src="/images/journeys/anger.webp"
-              width={192}
-              height={192}
-              className={clsx(
-                "rotate-6 rounded-2xl",
-                "border-4 transition-colors",
-                selected === 3 ? "border-green-default" : "border-transparent",
-              )}
-              onClick={() => setSelected(3)}
-              alt=""
-            />
+            <div className="relative aspect-square w-[140px] xs:w-[192px]">
+              <Image
+                draggable={false}
+                src="/images/journeys/anger.webp"
+                fill
+                className={clsx(
+                  "rotate-6 rounded-2xl object-contain",
+                  "border-4 transition-colors",
+                  selected === 3
+                    ? "border-green-default"
+                    : "border-transparent",
+                )}
+                alt=""
+                onClick={() => setSelected(3)}
+              />
+            </div>
           </AppearAnimated>
         </div>
       </StructureRow>
@@ -128,7 +137,7 @@ const SctructureShowcase = () => {
         index={2}
         textContent={
           <>
-            <h3 className="mb-4 flex-wrap font-montserratAlt text-12xl font-bold leading-[1]">
+            <h3 className="mb-4 font-montserratAlt text-12xl font-bold leading-[1]">
               Explore{" "}
               <span className="font-black text-yellow-default">Moments</span>
             </h3>
@@ -146,8 +155,8 @@ const SctructureShowcase = () => {
           </>
         }
       >
-        <div className="relative flex flex-1 justify-center">
-          <div className="absolute">
+        <div className="relative flex flex-1 flex-shrink-0 flex-col items-center justify-center">
+          <div className="relative">
             <AppearAnimated delay={100}>
               <Moment
                 tag="reflection"
@@ -157,7 +166,7 @@ const SctructureShowcase = () => {
               />
             </AppearAnimated>
           </div>
-          <div className="absolute top-28 scale-[0.97]">
+          <div className="relative -mt-3 scale-[0.97] xs:-mt-4">
             <AppearAnimated delay={750}>
               <Moment
                 tag="manager"
@@ -167,7 +176,7 @@ const SctructureShowcase = () => {
               />
             </AppearAnimated>
           </div>
-          <div className="absolute top-56 scale-[0.94]">
+          <div className="relative -mt-3 scale-[0.94] xs:-mt-5">
             <AppearAnimated delay={1500}>
               <Moment
                 tag="exile"
