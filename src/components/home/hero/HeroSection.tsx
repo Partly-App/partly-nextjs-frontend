@@ -7,7 +7,7 @@ import HeroImageLayer from "./HeroImageLayer"
 
 const HeroSection = () => {
   return (
-    <div className="relative flex min-h-[90vh] sm:min-h-[80vh] w-full flex-col items-center justify-center">
+    <div className="relative flex min-h-[90vh] sm:min-h-[90vh] w-full flex-col items-center justify-center">
       <HeroImageLayer />
       <div className="relative z-[5] flex flex-col items-center">
         <AnimatedLogo size={192} />

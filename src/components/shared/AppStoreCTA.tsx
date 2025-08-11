@@ -7,17 +7,15 @@ const AppStoreCTA = ({ className }: { className?: string }) => {
     <Link
       href="https://apps.apple.com/ua/app/partly-confidence-calm/id6745524570"
       target="_blank"
-      className={clsx(
-        "flex h-fit w-40 items-center justify-center",
-        className,
-      )}
+      className={clsx("flex h-fit w-40 items-center justify-center", className)}
     >
       <Image
         src="/images/app-store.webp"
         alt="Download on AppStore"
         width={240}
-        height={32}
+        height={80}
         className="pointer-events-none select-none"
+        priority
       />
     </Link>
   )
